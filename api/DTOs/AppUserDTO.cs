@@ -1,5 +1,3 @@
-using api.Entity;
-
 namespace api.DTOs
 {
     public class AppUserDTO

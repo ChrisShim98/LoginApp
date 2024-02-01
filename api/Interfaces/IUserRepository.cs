@@ -1,7 +1,6 @@
 using api.DTOs;
 using api.Entity;
 using api.Helpers;
-using Microsoft.AspNetCore.Mvc;
 
 namespace api.Interfaces
 {

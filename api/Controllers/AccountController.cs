@@ -1,14 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using api.DTOs;
 using api.Entity;
 using api.Interfaces;
 using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace api.Controllers
 {
@@ -54,7 +49,7 @@ namespace api.Controllers
             return await Task.FromResult(_userManager.Users.Any(x => x.UserName == username.ToLower()));
         }
 
-        [HttpPost("login")]
+        [HttpPost("login")] // POST: api/account/login
         public async Task<ActionResult<UserDTO>> Login(LoginDTO loginDTO)
         {
             var user = await Task.FromResult(_userManager.Users

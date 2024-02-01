@@ -1,9 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using api.Data;
 using api.DTOs;
 using api.Entity;
 using api.Extensions;
@@ -11,7 +5,6 @@ using api.Helpers;
 using api.Interfaces;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -48,7 +41,7 @@ namespace api.Controllers
         [HttpDelete("delete")]
         public async Task<ActionResult> DeleteUser([FromQuery]int id)
         {
-            if (!(await UserExists(id))) {
+            if (!await UserExists(id)) {
                 return BadRequest("User does not exist");
             }
             

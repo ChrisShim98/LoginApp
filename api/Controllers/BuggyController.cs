@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using api.Controllers;
 using api.Data;
 using api.Entity;
@@ -38,8 +34,8 @@ namespace API.Controllers
         public ActionResult<string> GetServerError()
         {
             var thing = _context.Users.Find(-1);
-            var thingToRturn = thing.ToString();
-            return "seccret text";
+            var thingToReturn = thing.ToString();
+            return "secret text";
         }
         [HttpGet("bad-request")]
         public ActionResult<string> GetBadRequest()
