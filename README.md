@@ -1,7 +1,7 @@
 # LoginApp - Web Application
 <p align="center">
- <b>Developed with Angular 14 x Bootstrap 5 x DotNet 7.0</b>
- <img src="https://res.cloudinary.com/diywkaahn/image/upload/v1674050548/Github/Techstacksfinal_jx9ber.png" alt="Tech Stacks">
+ <b>Developed with DotNet 7.0 x Bootstrap 5 x Angular 14</b>
+ <img src="https://res.cloudinary.com/dhpo94oka/image/upload/v1709474256/Github/Description/b9ksoex1o7ynsnfcesvq.png" alt="Tech Stacks">
 </p>
  
  ## Description
